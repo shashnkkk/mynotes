@@ -34,7 +34,7 @@ class _LoginViewState extends State<LoginView> {
         children: [
           TextField(
             controller: _email,
-            decoration: InputDecoration(hintText: "Enter you Email"),
+            decoration: const InputDecoration(hintText: "Enter you Email"),
             enableSuggestions: false,
             autocorrect: false,
             keyboardType: TextInputType.emailAddress,
@@ -44,7 +44,7 @@ class _LoginViewState extends State<LoginView> {
             obscureText: true,
             enableSuggestions: false,
             autocorrect: false,
-            decoration: InputDecoration(hintText: "Enter you Password"),
+            decoration: const InputDecoration(hintText: "Enter you Password"),
           ),
           TextButton(
             onPressed: () async {

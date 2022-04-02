@@ -34,7 +34,7 @@ class _RegisterViewState extends State<RegisterView> {
                   children: [
                     TextField(
                       controller: _email,
-                      decoration: InputDecoration(hintText: "Enter you Email"),
+                      decoration: const InputDecoration(hintText: "Enter you Email"),
                       enableSuggestions: false,
                       autocorrect: false,
                       keyboardType: TextInputType.emailAddress,
@@ -44,7 +44,7 @@ class _RegisterViewState extends State<RegisterView> {
                       obscureText: true,
                       enableSuggestions: false,
                       autocorrect: false,
-                      decoration: InputDecoration(hintText: "Enter you Password"),
+                      decoration: const InputDecoration(hintText: "Enter you Password"),
                     ),
                     TextButton(
                       onPressed: () async {
@@ -74,7 +74,7 @@ class _RegisterViewState extends State<RegisterView> {
                         '/login/',
                       ( route) => false,
               );
-                    }, child: Text('Already Registered ? Login here'))
+                    }, child: const Text('Already Registered ? Login here'))
                   ],
                 ),
     );
